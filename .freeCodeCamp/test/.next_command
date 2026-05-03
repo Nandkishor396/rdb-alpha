@@ -352,3 +352,27 @@ https://github.com/Nandkishor396/universe-db.git
 git remote set-url origin https://github.com/Nandkishor396/universe-db.git
 git remote -v
 git add .
+git commit -m "SQL project"
+git push -u origin main
+gh auth login
+git remote -v
+git remote set-url origin https://github.com/Nandkishor396/universe-db.git
+git push -u origin main
+git remote -v
+git push -u origin main
+git credential reject https://github.com
+git config --global --unset credential.helper
+rm -rf ~/.git-credentials
+git credential-cache exit
+git remote -v
+git push -u origin main
+git remote remove origin
+git remote add origin https://github.com/Nandkishor396/universe-db.git
+git push -u origin main
+rm -rf ~/.git-credentials
+git config --global --unset-all credential.helper
+git push -u origin main
+gh auth logout
+git remote remove origin
+git remote add origin https://github.com/Nandkishor396/universe-db.git
+git push -u origin main
